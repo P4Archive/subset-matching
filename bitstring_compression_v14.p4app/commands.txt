@@ -29,13 +29,13 @@ mc_node_create 6 2 3
 mc_node_associate 7 6
 
 table_set_default mg_ternary _nop
-table_add mg_ternary0 set_mgid0 0x1&&&0xff => 1 1
-table_add mg_ternary0 set_mgid0 0x2&&&0xff => 2 1
-table_add mg_ternary0 set_mgid0 0x3&&&0xff => 3 1
-table_add mg_ternary0 set_mgid0 0x4&&&0xff => 4 1
-table_add mg_ternary0 set_mgid0 0x5&&&0xff => 5 1
-table_add mg_ternary0 set_mgid0 0x6&&&0xff => 6 1
-table_add mg_ternary0 set_mgid0 0x7&&&0xff => 7 1
+table_add mg_ternary0 set_mgid 0x1&&&0xff => 1 1
+table_add mg_ternary0 set_mgid 0x2&&&0xff => 2 1
+table_add mg_ternary0 set_mgid 0x3&&&0xff => 3 1
+table_add mg_ternary0 set_mgid 0x4&&&0xff => 4 1
+table_add mg_ternary0 set_mgid 0x5&&&0xff => 5 1
+table_add mg_ternary0 set_mgid 0x6&&&0xff => 6 1
+table_add mg_ternary0 set_mgid 0x7&&&0xff => 7 1
 
 table_set_default check_prune _drop
 table_add check_prune _nop 1 =>

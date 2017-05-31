@@ -47,35 +47,7 @@ table forward {
     size: 512;
 }
 
-action set_mgid0(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid1(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid2(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid3(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid4(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid5(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid6(mgid) {
-    modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
-}
-
-action set_mgid7(mgid) {
+action set_mgid(mgid) {
     modify_field(intrinsic_metadata.mcast_grp, mgid, mgid);
 }
 
@@ -85,7 +57,7 @@ table mg_ternary0 {
     }
     actions {
         _nop;
-        set_mgid0;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -97,7 +69,7 @@ table mg_ternary1 {
     }
     actions {
         _nop;
-        set_mgid1;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -109,7 +81,7 @@ table mg_ternary2 {
     }
     actions {
         _nop;
-        set_mgid2;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -121,7 +93,7 @@ table mg_ternary3 {
     }
     actions {
         _nop;
-        set_mgid3;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -133,7 +105,7 @@ table mg_ternary4 {
     }
     actions {
         _nop;
-        set_mgid4;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -145,7 +117,7 @@ table mg_ternary5 {
     }
     actions {
         _nop;
-        set_mgid5;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -157,7 +129,7 @@ table mg_ternary6 {
     }
     actions {
         _nop;
-        set_mgid6;
+        set_mgid;
         _drop;
     }
     size: 512;
@@ -169,7 +141,7 @@ table mg_ternary7 {
     }
     actions {
         _nop;
-        set_mgid7;
+        set_mgid;
         _drop;
     }
     size: 512;
