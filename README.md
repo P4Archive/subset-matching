@@ -1,6 +1,10 @@
 # Subset Matching Schemes
 Implementations of some subset matching schemes.
 
+### Exact Lookup
+The most straight-forward solution, which provides subset matching at
+line-rate, is to map all of the possible queries to a set of multicast groups.
+
 ### Egress Pruning
 A solution to subset matching is to simply use a single multicast group to send
 a copy of each packet to all interfaces and then, drop the redundant copies
